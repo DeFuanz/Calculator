@@ -122,6 +122,7 @@ class Calculations {
             num1 = number;
             previousnum = num1.toString();
             number = 0;
+            shownnum = num2.toString();
           } else if (num1 != 0 && num2 != 0) {
             num1 = num1 + num2;
             shownnum = num1.toString();
