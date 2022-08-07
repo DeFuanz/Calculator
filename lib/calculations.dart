@@ -6,7 +6,7 @@ class Calculations {
   String shownnum = "0";
   String previousnum = "0";
   double doublenum = 0;
-  var num1 = 0;
+  int num1 = 0;
   int num2 = 0;
   int functionSelected = 0;
 
@@ -89,13 +89,13 @@ class Calculations {
 
   void pushDivide() {
     if (num1 == 0) {
-      num1 = number;
+      doublenum = number;
     } else {
       num2 = number;
-      num1 = num1 / num2;
+      doublenum = num1 / num2;
       num2 = 0;
     }
-    num1 = number;
+    doublenum = number;
     previousnum = number.toString();
     number = 0;
     shownnum = number.toString();
