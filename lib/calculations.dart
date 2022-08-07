@@ -56,6 +56,7 @@ class Calculations {
 
   void pushSubtract() {
     pushCalculate();
+    print(functionSelected);
     if (num1 == 0) {
       num1 = number;
     } else {
