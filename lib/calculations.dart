@@ -37,7 +37,7 @@ class Calculations {
   }
 
   void pushMultiply() {
-    pushCalculate(); // found you have to calculate first if you want to use multiple operators
+    pushCalculate(functionSelected); // found you have to calculate first if you want to use multiple operators
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -55,7 +55,7 @@ class Calculations {
   }
 
   void pushSubtract() {
-    pushCalculate();
+    pushCalculate(functionSelected);
     print(functionSelected);
     if (num1 == 0) {
       num1 = number;
@@ -75,7 +75,7 @@ class Calculations {
 
   void pushAdd() {
     if (num1 == 0) {
-      pushCalculate();
+      pushCalculate(functionSelected);
       num1 = number;
     } else {
       num2 = number;
@@ -92,7 +92,7 @@ class Calculations {
   }
 
   void pushDivide() {
-    pushCalculate();
+    pushCalculate(functionSelected);
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -109,7 +109,7 @@ class Calculations {
     functionSelected = 4;
   }
 
-  void pushCalculate() {
+  void pushCalculate(functionSelected) {
     switch (functionSelected) {
       case 1:
         {
