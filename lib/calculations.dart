@@ -82,6 +82,7 @@ class Calculations {
       shownnum = num2.toString();
     }
     functionSelected = (num1 + num2);
+    num2 = 0;
     number = 0;
     numbersPressed.clear();
   }
