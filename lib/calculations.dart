@@ -81,9 +81,6 @@ class Calculations {
   }
 
   void pushCalculate() {
-    num2 = number;
-    previousnum = "0";
-
     switch (functionSelected) {
       case 1:
         {
@@ -115,6 +112,7 @@ class Calculations {
         }
     }
 
+    previousnum = "0";
     numbersPressed.clear();
     num1 = 0;
     num2 = 0;
