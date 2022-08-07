@@ -113,8 +113,8 @@ class Calculations {
             previousnum = num1.toString();
             number = 0;
             shownnum = num2.toString();
-          } else {
             numbersPressed.clear();
+          } else {
             num2 = int.parse(shownnum);
             num1 = num1 + num2;
             num2 = 0;
