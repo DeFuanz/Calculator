@@ -99,7 +99,7 @@ class Calculations {
 
       case 3:
         {
-          shownnum = (num1 + num2).toString();
+          shownnum = (previousnum + shownnum).toString();
         }
         break;
 
