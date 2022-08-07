@@ -139,7 +139,7 @@ class Calculations {
 
     previousnum = "0";
     numbersPressed.clear();
-    num1 = 0;
+    num1 = double.parse(shownnum);
     num2 = 0;
     doublenum = 0;
   }
