@@ -101,7 +101,7 @@ class Calculations {
     shownnum = number.toString();
     numbersPressed.clear();
     numbersPressed.add(0);
-    functionSelected = 3;
+    functionSelected = 4;
   }
 
   void pushCalculate() {
@@ -127,7 +127,7 @@ class Calculations {
 
       case 4:
         {
-          shownnum = (doublenum / num2).toString();
+          shownnum = (num1 / num2).toString();
         }
         break;
 
