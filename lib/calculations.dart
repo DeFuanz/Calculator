@@ -88,15 +88,15 @@ class Calculations {
   }
 
   void pushDivide() {
-    if (num1 == 0) {
+    if (doublenum == 0) {
       doublenum = number;
     } else {
       num2 = number;
-      doublenum = num1 / num2;
+      doublenum = doublenum / num2;
       num2 = 0;
     }
     doublenum = number;
-    previousnum = num1.toString();
+    previousnum = doublenum.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
@@ -141,5 +141,6 @@ class Calculations {
     numbersPressed.clear();
     num1 = 0;
     num2 = 0;
+    doublenum = 0;
   }
 }
