@@ -250,6 +250,7 @@ class _MyAppState extends State<MyApp> {
                       calc.pushAC();
                       setState(() {
                         enteredNum = calc.shownnum.toString();
+                        previousNum = calc.previousnum.toString();
                       });
                     },
                     child: const Text(
