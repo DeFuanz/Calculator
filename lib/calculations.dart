@@ -121,6 +121,7 @@ class Calculations {
 
       case 3:
         {
+          num2 = 0;
           shownnum = (num1 + num2).toString();
           if (num1 == 0) {
             num1 = number;
