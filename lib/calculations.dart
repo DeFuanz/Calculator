@@ -84,6 +84,7 @@ class Calculations {
       num2 = 0;
       previousnum = num1.toString();
       shownnum = "0";
+      numbersPressed.clear();
     }
   }
 
