@@ -57,10 +57,11 @@ class Calculations {
   }
 
   void pushAdd() {
-    if (num1 != 0) {
-      num2 = number;
-    } else {
+    if (num1 == 0) {
       num1 = number;
+    } else {
+      num2 = number;
+      print(num2.toString() + "activated");
     }
     print(num1);
     print(num2);
