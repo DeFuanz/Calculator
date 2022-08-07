@@ -130,6 +130,7 @@ class Calculations {
           }
           num2 = number;
           number = 0;
+          previousnum = "0";
           shownnum = num1.toString();
           numbersPressed.clear();
           numbersPressed.add(0);
