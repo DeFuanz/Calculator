@@ -55,6 +55,7 @@ class Calculations {
   }
 
   void pushSubtract() {
+    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -73,6 +74,7 @@ class Calculations {
 
   void pushAdd() {
     if (num1 == 0) {
+      pushCalculate();
       num1 = number;
     } else {
       num2 = number;
