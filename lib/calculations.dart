@@ -82,7 +82,8 @@ class Calculations {
       num2 = int.parse(shownnum);
       num1 = num1 + num2;
       num2 = 0;
-      shownnum = num1.toString();
+      previousnum = num1.toString();
+      shownnum = "0";
     }
   }
 
