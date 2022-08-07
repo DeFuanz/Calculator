@@ -73,16 +73,6 @@ class Calculations {
 
   void pushAdd() {
     pushCalculate(3);
-    if (num1 > 0 && num2 > 0) {
-      previousnum = shownnum;
-    }
-    if (num1 == 0) {
-      num1 = number;
-      number = 0;
-    } else {
-      num2 = number;
-      number = 0;
-    }
   }
 
   void pushDivide() {
