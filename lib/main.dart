@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               color: Colors.white,
-              alignment: Alignment.centerRight,
+              alignment: Alignment.topRight,
               height: 140,
             ),
             Expanded(
