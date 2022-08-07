@@ -58,10 +58,11 @@ class Calculations {
 
   void pushAdd() {
     if (num1 != 0) {
-      num1 = num1 + num2;
+      num2 = number;
     } else {
       num1 = number;
-    } //left off fixing variables to store previous and shown
+    }
+    previousnum = (num1 + num2).toString(); //left off fixing variables to store previous and shown
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
