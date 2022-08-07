@@ -127,7 +127,7 @@ class Calculations {
 
       case 4:
         {
-          shownnum = (num1 / num2).toString();
+          shownnum = (doublenum / num2).toString();
         }
         break;
 
