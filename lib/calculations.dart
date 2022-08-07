@@ -121,7 +121,12 @@ class Calculations {
           if (num1 == 0) {
             num1 = number;
             previousnum = num1.toString();
-            num1 = 0;
+            number = 0;
+          } else if (num1 != 0 && num2 != 0) {
+            num1 = num1 + num2;
+            shownnum = num1.toString();
+          } else {
+            num2 = number;
           }
         }
         break;
