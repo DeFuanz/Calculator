@@ -58,6 +58,8 @@ class Calculations {
   void pushAdd() {
     if (number == 0 || number == null) {
       num1 = number;
+    } else {
+      num1 = num1 + int.parse(number);
     }
     previousnum = number.toString();
     number = 0;
