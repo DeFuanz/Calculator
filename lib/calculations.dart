@@ -122,6 +122,19 @@ class Calculations {
       case 3:
         {
           shownnum = (num1 + num2).toString();
+          if (num1 == 0) {
+            num1 = number;
+          } else {
+            num2 = number;
+            num1 = num1 + num2;
+            num2 = 0;
+          }
+          num2 = number;
+          previousnum = num1.toString();
+          number = 0;
+          numbersPressed.clear();
+          numbersPressed.add(0);
+          functionSelected = 3;
         }
         break;
 
