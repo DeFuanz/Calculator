@@ -1,12 +1,11 @@
 class Calculations {
   List<int> numbersPressed = [];
-  List<int> queuedNum = [];
 
   var number;
   String shownnum = "0";
   String previousnum = "0";
   double doublenum = 0;
-  int num1 = 0;
+  double num1 = 0;
   int num2 = 0;
   int functionSelected = 0;
 
@@ -79,7 +78,7 @@ class Calculations {
       num2 = 0;
     }
     num2 = number;
-    previousnum = num1.toString(); //left off fixing variables to store previous and shown
+    previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
@@ -88,14 +87,15 @@ class Calculations {
   }
 
   void pushDivide() {
-    if (doublenum == 0) {
-      doublenum = double.parse(number);
+    //divide is broken currently due to variables being ints
+    if (num1 == 0) {
+      num1 = number;
     } else {
-      num2 = number;
-      doublenum = doublenum / num2;
+      doublenum = double.parse(number);
+      doublenum = num1 / doublenum;
       num2 = 0;
     }
-    doublenum = number;
+    doublenum = double.parse(number);
     previousnum = doublenum.toString();
     number = 0;
     shownnum = number.toString();
