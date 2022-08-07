@@ -65,7 +65,6 @@ class Calculations {
     }
 
     previousnum = number.toString();
-    number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
     numbersPressed.add(0);
