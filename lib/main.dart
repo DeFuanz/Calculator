@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
                 enteredNum.toString(),
               ),
               color: Colors.amber,
-              alignment: Alignment.centerRight,
+              alignment: Alignment.bottomRight,
               height: 50,
             ),
             Container(
@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               color: Colors.white,
-              alignment: Alignment.topRight,
+              alignment: Alignment.centerRight,
               height: 120,
             ),
             Expanded(
