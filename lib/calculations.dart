@@ -78,6 +78,7 @@ class Calculations {
     } else if (num1 != 0 && num2 != 0) {
       pushCalculate();
       num1 = double.parse(shownnum);
+      shownnum = num1.toString();
     } else {
       num2 = number;
       previousnum = num1.toString();
