@@ -75,6 +75,7 @@ class Calculations {
 
   void pushCalculate() {
     num2 = number;
+    previousnum = "0";
 
     switch (functionSelected) {
       case 1:
