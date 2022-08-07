@@ -72,6 +72,7 @@ class Calculations {
   }
 
   void pushAdd() {
+    functionSelected = 3;
     pushCalculate();
     if (num1 == 0) {
       num1 = number;
@@ -83,7 +84,6 @@ class Calculations {
     shownnum = (num1 + num2).toString();
     numbersPressed.clear();
     numbersPressed.add(0);
-    functionSelected = 3;
   }
 
   void pushDivide() {
