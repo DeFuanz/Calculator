@@ -72,13 +72,10 @@ class Calculations {
   }
 
   void pushAdd() {
-    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
       num2 = number;
-      num1 = num1 + num2;
-      num2 = 0;
     }
     num2 = number;
     previousnum = num1.toString();
@@ -90,7 +87,6 @@ class Calculations {
   }
 
   void pushDivide() {
-    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -123,39 +119,13 @@ class Calculations {
 
       case 3:
         {
-          if (num1 == 0) {
-            num1 = number;
-          } else {
-            num2 = number;
-            num1 = num1 + num2;
-            num2 = 0;
-          }
-          num2 = number;
-          number = 0;
-          previousnum = "0";
-          shownnum = num1.toString();
-          numbersPressed.clear();
-          numbersPressed.add(0);
-          functionSelected = 3;
+          shownnum = (num1 + num2).toString();
         }
         break;
 
       case 4:
         {
-          if (num1 == 0) {
-            num1 = number;
-          } else {
-            num2 = number;
-            num1 = num1 / num2;
-            num2 = 0;
-          }
-          num2 = number;
-          previousnum = "0";
-          number = 0;
-          shownnum = num1.toString();
-          numbersPressed.clear();
-          numbersPressed.add(0);
-          functionSelected = 4;
+          shownnum = (num1 / num2).toString();
         }
         break;
 
