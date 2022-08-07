@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Calculations calc = Calculations();
   String enteredNum = "0";
+  String previousNum = "0";
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
           children: [
             Container(
               child: Text(
-                enteredNum.toString(),
+                previousNum.toString(),
                 style: const TextStyle(
                   fontSize: 20,
                 ),
