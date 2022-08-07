@@ -60,7 +60,7 @@ class Calculations {
     if (num1 == 0) {
       num1 = number;
     } else {
-      num1 = num1 + num2;
+      num1 = num1 + int.parse(number);
     }
     previousnum = number.toString();
     number = 0;
