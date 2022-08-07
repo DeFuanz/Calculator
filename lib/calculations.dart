@@ -114,6 +114,7 @@ class Calculations {
             number = 0;
             shownnum = num2.toString();
           } else {
+            print(number);
             num2 = number;
             num1 = num1 + num2;
             num2 = 0;
