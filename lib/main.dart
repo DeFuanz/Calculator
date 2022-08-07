@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
                   fontSize: 20,
                 ),
               ),
-              color: Colors.amber,
+              color: Colors.white,
               alignment: Alignment.bottomRight,
               height: 50,
             ),
