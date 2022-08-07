@@ -25,6 +25,9 @@ class _MyAppState extends State<MyApp> {
             Container(
               child: Text(
                 enteredNum.toString(),
+                style: const TextStyle(
+                  fontSize: 20,
+                ),
               ),
               color: Colors.amber,
               alignment: Alignment.bottomRight,
@@ -33,7 +36,7 @@ class _MyAppState extends State<MyApp> {
             Container(
               child: Text(
                 enteredNum.toString(),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 40,
                 ),
               ),
