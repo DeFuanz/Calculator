@@ -90,6 +90,7 @@ class Calculations {
   }
 
   void pushDivide() {
+    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
