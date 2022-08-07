@@ -57,7 +57,11 @@ class Calculations {
   }
 
   void pushAdd() {
-    num1 = number;
+    if (num1 == 0) {
+      num1 = number;
+    } else {
+      num1 += num2;
+    }
     previousnum = number.toString();
     number = 0;
     shownnum = number.toString();
