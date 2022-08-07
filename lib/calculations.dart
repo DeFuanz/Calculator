@@ -1,5 +1,6 @@
 class Calculations {
   List<int> numbersPressed = [];
+  List<int> queuedNum = [];
 
   var number;
   String shownnum = "0";
@@ -57,7 +58,7 @@ class Calculations {
 
   void pushAdd() {
     num1 = number;
-    previousnum = number.toString();
+    previousnum = shownnum.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
