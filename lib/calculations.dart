@@ -87,7 +87,6 @@ class Calculations {
   }
 
   void pushDivide() {
-    //divide is broken currently due to variables being ints
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -142,5 +141,6 @@ class Calculations {
     num1 = 0;
     num2 = 0;
     doublenum = 0;
+    number = 0;
   }
 }
