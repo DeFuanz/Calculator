@@ -95,13 +95,13 @@ class Calculations {
       num1 = num1 / num2;
       num2 = 0;
     }
-    doublenum = double.parse(number);
-    previousnum = doublenum.toString();
+    num2 = number;
+    previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
     numbersPressed.add(0);
-    functionSelected = 4;
+    functionSelected = 3;
   }
 
   void pushCalculate() {
