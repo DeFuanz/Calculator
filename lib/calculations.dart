@@ -21,6 +21,7 @@ class Calculations {
   void pushNum(num) {
     numbersPressed.add(num);
     number = int.parse(numbersPressed.join());
+    shownnum = number.toString();
   }
 
   void pushDelete() {
