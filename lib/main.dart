@@ -160,6 +160,7 @@ class _MyAppState extends State<MyApp> {
                       calc.pushSubtract();
                       setState(() {
                         enteredNum = calc.shownnum.toString();
+                        previousNum = calc.previousnum.toString();
                       });
                     },
                     child: const Text(
@@ -220,6 +221,7 @@ class _MyAppState extends State<MyApp> {
                       calc.pushAdd();
                       setState(() {
                         enteredNum = calc.shownnum.toString();
+                        previousNum = calc.previousnum.toString();
                       });
                     },
                     child: const Text(
@@ -281,6 +283,7 @@ class _MyAppState extends State<MyApp> {
                       calc.pushDivide();
                       setState(() {
                         enteredNum = calc.shownnum.toString();
+                        previousNum = calc.previousnum.toString();
                       });
                     },
                     child: const Text(
