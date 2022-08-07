@@ -61,11 +61,10 @@ class Calculations {
       num1 = number;
     } else {
       num2 = number;
-      print(num2.toString() + "activated");
+      num1 = num1 + num2;
+      num2 = 0;
     }
-    print(num1);
-    print(num2);
-    num1 = num1 + num2;
+
     previousnum = num1.toString(); //left off fixing variables to store previous and shown
     number = 0;
     shownnum = number.toString();
