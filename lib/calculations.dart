@@ -62,7 +62,7 @@ class Calculations {
     } else {
       num1 = number;
     }
-    previousnum = (num1 + num2).toString();
+    num1 = num1 + num2; //left off fixing variables to store previous and shown
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
