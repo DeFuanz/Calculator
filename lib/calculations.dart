@@ -62,6 +62,8 @@ class Calculations {
     } else {
       num1 = number;
     }
+    print(num1);
+    print(num2);
     num1 = num1 + num2;
     previousnum = num1.toString(); //left off fixing variables to store previous and shown
     number = 0;
