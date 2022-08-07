@@ -16,6 +16,7 @@ class Calculations {
     num1 = 0;
     num2 = 0;
     previousnum = "0";
+    functionSelected = 0;
   }
 
   void pushNum(num) {
