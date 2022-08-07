@@ -17,11 +17,19 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Simple UI',
+      title: 'Calculator',
       home: Scaffold(
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Container(
+              child: Text(
+                enteredNum.toString(),
+              ),
+              color: Colors.amber,
+              alignment: Alignment.centerRight,
+              height: 40,
+            ),
             Container(
               child: Text(
                 enteredNum.toString(),
@@ -31,7 +39,7 @@ class _MyAppState extends State<MyApp> {
               ),
               color: Colors.white,
               alignment: Alignment.centerRight,
-              height: 180,
+              height: 140,
             ),
             Expanded(
               child: GridView(
