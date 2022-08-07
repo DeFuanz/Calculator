@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Calculations calc = new Calculations();
+  Calculations calc = Calculations();
   String enteredNum = "0";
 
   @override
