@@ -57,7 +57,7 @@ class Calculations {
   }
 
   void pushAdd() {
-    num1 = number;
+    num1 = int.parse(shownnum) + num1;
     previousnum = shownnum.toString();
     number = 0;
     shownnum = number.toString();
