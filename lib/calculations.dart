@@ -140,7 +140,20 @@ class Calculations {
 
       case 4:
         {
-          shownnum = (num1 / num2).toString();
+          if (num1 == 0) {
+            num1 = number;
+          } else {
+            num2 = number;
+            num1 = num1 / num2;
+            num2 = 0;
+          }
+          num2 = number;
+          previousnum = "0";
+          number = 0;
+          shownnum = num1.toString();
+          numbersPressed.clear();
+          numbersPressed.add(0);
+          functionSelected = 4;
         }
         break;
 
