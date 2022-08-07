@@ -171,20 +171,14 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
-                  TextButton(
+                  IconButton(
+                    icon: Image.asset('cat1.png'),
                     onPressed: () {
                       calc.pushNum(1);
                       setState(() {
                         enteredNum = calc.shownnum.toString();
                       });
                     },
-                    child: const Text(
-                      '1',
-                      style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.black,
-                      ),
-                    ),
                   ),
                   TextButton(
                     onPressed: () {
