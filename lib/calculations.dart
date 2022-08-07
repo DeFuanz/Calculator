@@ -81,7 +81,7 @@ class Calculations {
     num2 = 0;
     previousnum = num1.toString();
     number = 0;
-    shownnum = number.toString();
+    shownnum = num1.toString();
     numbersPressed.clear();
     numbersPressed.add(0);
     functionSelected = 3;
