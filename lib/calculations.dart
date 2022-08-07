@@ -73,9 +73,10 @@ class Calculations {
 
   void pushAdd() {
     functionSelected = 3;
-    pushCalculate();
     if (num1 == 0) {
       num1 = number;
+    } else if (num1 != 0 && num2 != 0) {
+      pushCalculate();
     } else {
       num2 = number;
     }
