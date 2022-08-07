@@ -109,13 +109,13 @@ class Calculations {
       case 3:
         {
           if (num1 == 0) {
-            num1 = number;
+            num1 = double.parse(shownnum);
             previousnum = num1.toString();
             number = 0;
             shownnum = num2.toString();
           } else {
             print(number);
-            num2 = number;
+            num2 = int.parse(shownnum);
             num1 = num1 + num2;
             num2 = 0;
             shownnum = num1.toString();
