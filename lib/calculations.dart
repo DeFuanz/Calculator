@@ -89,7 +89,7 @@ class Calculations {
 
   void pushDivide() {
     if (doublenum == 0) {
-      doublenum = number;
+      doublenum = double.parse(number);
     } else {
       num2 = number;
       doublenum = doublenum / num2;
