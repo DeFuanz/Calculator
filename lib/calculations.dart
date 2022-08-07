@@ -61,6 +61,7 @@ class Calculations {
     } else {
       num1 = number;
     }
+    print(number);
 
     previousnum = number.toString();
     number = 0;
