@@ -56,15 +56,8 @@ class Calculations {
   }
 
   void pushAdd() {
-    print(num1);
-    print(number);
-    if (number > 0) {
-      number = num1 + number;
-    } else {
-      num1 = number;
-    }
-
-    previousnum = number.toString();
+    num1 = number;
+    previousnum = (num1 + num2).toString();
     shownnum = number.toString();
     numbersPressed.clear();
     numbersPressed.add(0);
