@@ -48,6 +48,7 @@ class Calculations {
 
   void pushSubtract() {
     num1 = number;
+    previousnum = number.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
@@ -57,6 +58,7 @@ class Calculations {
 
   void pushAdd() {
     num1 = number;
+    previousnum = number.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
@@ -66,6 +68,7 @@ class Calculations {
 
   void pushDivide() {
     num1 = number;
+    previousnum = number.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
