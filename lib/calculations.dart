@@ -56,12 +56,13 @@ class Calculations {
   }
 
   void pushAdd() {
+    print(num1);
+    print(number);
     if (number > 0) {
       number = num1 + number;
     } else {
       num1 = number;
     }
-    print(number);
 
     previousnum = number.toString();
     number = 0;
