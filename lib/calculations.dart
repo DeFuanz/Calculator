@@ -64,7 +64,7 @@ class Calculations {
       num1 = num1 + num2;
       num2 = 0;
     }
-
+    num2 = number;
     previousnum = num1.toString(); //left off fixing variables to store previous and shown
     number = 0;
     shownnum = number.toString();
