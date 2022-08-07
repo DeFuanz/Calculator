@@ -57,15 +57,14 @@ class Calculations {
   }
 
   void pushAdd() {
-    num1 = number;
-    if (num2 != 0) {
-      num1 = num1 + num2;
+    if (num1 != 0) {
+      num2 = number;
+    } else {
+      num1 = number;
     }
-    print(num1);
-    print(num2);
     previousnum = num1.toString();
     number = 0;
-    shownnum = number.toString();
+    shownnum = (num1 + num2).toString();
     numbersPressed.clear();
     numbersPressed.add(0);
     functionSelected = 3;
