@@ -72,7 +72,18 @@ class Calculations {
   }
 
   void pushAdd() {
-    pushCalculate(3);
+    if (num1 == 0) {
+      num1 = double.parse(shownnum);
+      previousnum = num1.toString();
+      number = 0;
+      shownnum = num2.toString();
+      numbersPressed.clear();
+    } else {
+      num2 = int.parse(shownnum);
+      num1 = num1 + num2;
+      num2 = 0;
+      shownnum = num1.toString();
+    }
   }
 
   void pushDivide() {
@@ -107,20 +118,7 @@ class Calculations {
         break;
 
       case 3:
-        {
-          if (num1 == 0) {
-            num1 = double.parse(shownnum);
-            previousnum = num1.toString();
-            number = 0;
-            shownnum = num2.toString();
-            numbersPressed.clear();
-          } else {
-            num2 = int.parse(shownnum);
-            num1 = num1 + num2;
-            num2 = 0;
-            shownnum = num1.toString();
-          }
-        }
+        {}
         break;
 
       case 4:
