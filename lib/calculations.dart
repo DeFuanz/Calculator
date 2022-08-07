@@ -114,7 +114,7 @@ class Calculations {
             number = 0;
             shownnum = num2.toString();
           } else {
-            print(number);
+            numbersPressed.clear();
             num2 = int.parse(shownnum);
             num1 = num1 + num2;
             num2 = 0;
