@@ -87,6 +87,7 @@ class Calculations {
   }
 
   void pushDivide() {
+    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -141,6 +142,5 @@ class Calculations {
     num1 = 0;
     num2 = 0;
     doublenum = 0;
-    number = 0;
   }
 }
