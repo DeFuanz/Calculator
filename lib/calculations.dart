@@ -77,7 +77,13 @@ class Calculations {
     if (num1 == 0) {
       num1 = number;
       shownnum = num1.toString();
+    } else {
+      num2 = number;
+      shownnum = num2.toString();
     }
+    functionSelected = (num1 + num2);
+    number = 0;
+    numbersPressed.clear();
   }
 
   void pushDivide() {
