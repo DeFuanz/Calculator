@@ -7,7 +7,7 @@ class Calculations {
   double doublenum = 0;
   double num1 = 0;
   int num2 = 0;
-  int functionSelected = 0;
+  double functionSelected = 0;
 
   void pushAC() {
     numbersPressed.clear();
@@ -72,19 +72,11 @@ class Calculations {
   }
 
   void pushAdd() {
+    num1 = functionSelected;
+    previousnum = num1.toString();
     if (num1 == 0) {
-      num1 = double.parse(shownnum);
-      previousnum = num1.toString();
-      number = 0;
-      shownnum = num2.toString();
-      numbersPressed.clear();
-    } else {
-      num2 = int.parse(shownnum);
-      num1 = num1 + num2;
-      num2 = 0;
-      previousnum = num1.toString();
-      shownnum = "0";
-      numbersPressed.clear();
+      num1 = number;
+      shownnum = num1.toString();
     }
   }
 
