@@ -99,6 +99,7 @@ class _MyAppState extends State<MyApp> {
                       calc.pushMultiply();
                       setState(() {
                         enteredNum = calc.shownnum.toString();
+                        previousNum = calc.previousnum.toString();
                       });
                     },
                     child: const Text(
