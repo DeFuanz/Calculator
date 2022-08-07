@@ -77,14 +77,15 @@ class Calculations {
       num1 = number;
     } else if (num1 != 0 && num2 != 0) {
       pushCalculate();
+      num1 = double.parse(shownnum);
     } else {
       num2 = number;
+      previousnum = num1.toString();
+      number = 0;
+      shownnum = number.toString();
+      numbersPressed.clear();
+      numbersPressed.add(0);
     }
-    previousnum = num1.toString();
-    number = 0;
-    shownnum = number.toString();
-    numbersPressed.clear();
-    numbersPressed.add(0);
   }
 
   void pushDivide() {
