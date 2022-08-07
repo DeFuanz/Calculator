@@ -91,8 +91,8 @@ class Calculations {
     if (num1 == 0) {
       num1 = number;
     } else {
-      doublenum = double.parse(number);
-      doublenum = num1 / doublenum;
+      num2 = number;
+      num1 = num1 / num2;
       num2 = 0;
     }
     doublenum = double.parse(number);
