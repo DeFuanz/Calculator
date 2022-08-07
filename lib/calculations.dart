@@ -36,6 +36,7 @@ class Calculations {
   }
 
   void pushMultiply() {
+    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -105,7 +106,6 @@ class Calculations {
   }
 
   void pushCalculate() {
-    num2 = number;
     switch (functionSelected) {
       case 1:
         {
@@ -136,11 +136,5 @@ class Calculations {
           shownnum = number.toString();
         }
     }
-
-    previousnum = "0";
-    numbersPressed.clear();
-    num1 = double.parse(shownnum);
-    num2 = 0;
-    doublenum = 0;
   }
 }
