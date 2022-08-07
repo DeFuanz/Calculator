@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
               ),
               color: Colors.amber,
               alignment: Alignment.centerRight,
-              height: 40,
+              height: 50,
             ),
             Container(
               child: Text(
@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
               ),
               color: Colors.white,
               alignment: Alignment.topRight,
-              height: 140,
+              height: 120,
             ),
             Expanded(
               child: GridView(
