@@ -61,6 +61,8 @@ class Calculations {
     if (num2 != 0) {
       num1 = num1 + num2;
     }
+    print(num1);
+    print(num2);
     previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
