@@ -72,12 +72,12 @@ class Calculations {
   }
 
   void pushAdd() {
+    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
       num2 = number;
     }
-    num2 = number;
     previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
