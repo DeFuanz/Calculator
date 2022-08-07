@@ -121,6 +121,7 @@ class Calculations {
           if (num1 == 0) {
             num1 = number;
             previousnum = num1.toString();
+            num1 = 0;
           }
         }
         break;
