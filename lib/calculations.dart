@@ -72,7 +72,6 @@ class Calculations {
   }
 
   void pushAdd() {
-    pushCalculate();
     if (num1 == 0) {
       num1 = number;
     } else {
@@ -80,6 +79,13 @@ class Calculations {
       num1 = num1 + num2;
       num2 = 0;
     }
+    num2 = number;
+    previousnum = num1.toString();
+    number = 0;
+    shownnum = number.toString();
+    numbersPressed.clear();
+    numbersPressed.add(0);
+    functionSelected = 3;
   }
 
   void pushDivide() {
@@ -116,13 +122,6 @@ class Calculations {
       case 3:
         {
           shownnum = (num1 + num2).toString();
-          num2 = number;
-          previousnum = num1.toString();
-          number = 0;
-          shownnum = number.toString();
-          numbersPressed.clear();
-          numbersPressed.add(0);
-          functionSelected = 3;
         }
         break;
 
