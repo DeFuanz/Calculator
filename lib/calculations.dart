@@ -120,7 +120,7 @@ class Calculations {
 
       case 3:
         {
-          shownnum = (num1 + num2).toString();
+          shownnum = (num1 + int.parse(shownnum)).toString();
         }
         break;
 
