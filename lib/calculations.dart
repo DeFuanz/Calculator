@@ -84,6 +84,8 @@ class Calculations {
   }
 
   void pushCalculate() {
+    print(num1);
+    print(num2);
     switch (functionSelected) {
       case 1:
         {
