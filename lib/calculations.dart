@@ -118,8 +118,10 @@ class Calculations {
 
       case 3:
         {
-          shownnum = (num1 + num2).toString();
-          num1 = double.parse(shownnum);
+          if (num1 == 0) {
+            num1 = number;
+            previousnum = num1.toString();
+          }
         }
         break;
 
