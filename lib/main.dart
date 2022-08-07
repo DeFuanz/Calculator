@@ -301,7 +301,7 @@ class _MyAppState extends State<MyApp> {
               height: 100,
               child: TextButton(
                 onPressed: () {
-                  calc.pushCalculate(calc.functionSelected);
+                  calc.pushCalculate();
                   setState(() {
                     enteredNum = calc.shownnum.toString();
                     previousNum = calc.previousnum.toString();
