@@ -56,7 +56,7 @@ class Calculations {
   }
 
   void pushAdd() {
-    if (number == 0 || number == null){
+    if (number == 0 || number == null) {
       num1 = number;
     }
     previousnum = number.toString();
@@ -65,8 +65,6 @@ class Calculations {
     numbersPressed.clear();
     numbersPressed.add(0);
     functionSelected = 3;
-
-    for 
   }
 
   void pushDivide() {
