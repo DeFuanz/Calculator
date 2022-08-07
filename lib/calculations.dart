@@ -45,7 +45,7 @@ class Calculations {
       num2 = 0;
     }
     num2 = number;
-    previousnum = number.toString();
+    previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
@@ -62,7 +62,7 @@ class Calculations {
       num2 = 0;
     }
     num2 = number;
-    previousnum = number.toString();
+    previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
@@ -96,7 +96,7 @@ class Calculations {
       num2 = 0;
     }
     doublenum = number;
-    previousnum = number.toString();
+    previousnum = num1.toString();
     number = 0;
     shownnum = number.toString();
     numbersPressed.clear();
