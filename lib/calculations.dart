@@ -15,6 +15,7 @@ class Calculations {
     shownnum = "0";
     num1 = 0;
     num2 = 0;
+    previousnum = "0";
   }
 
   void pushNum(num) {
@@ -36,7 +37,7 @@ class Calculations {
   }
 
   void pushMultiply() {
-    pushCalculate();
+    pushCalculate(); // found you have to calculate first if you want to use multiple operators
     if (num1 == 0) {
       num1 = number;
     } else {
