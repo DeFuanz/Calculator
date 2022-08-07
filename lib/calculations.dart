@@ -128,6 +128,7 @@ class Calculations {
             shownnum = num1.toString();
           } else {
             num2 = number;
+            shownnum = num2.toString();
           }
         }
         break;
