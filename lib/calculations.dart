@@ -113,6 +113,7 @@ class Calculations {
       case 3:
         {
           num1 = num1 + num2;
+          num2 = 0;
         }
         break;
 
