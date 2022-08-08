@@ -75,6 +75,8 @@ class Calculations {
   void pushAdd() {
     pushCalculate(functionSelected);
     previousnum = num1.toString();
+    num2 = number;
+    shownnum = num2.toString();
   }
 
   void pushDivide() {
