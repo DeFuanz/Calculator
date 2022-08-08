@@ -77,6 +77,7 @@ class Calculations {
     previousnum = num1.toString();
     num2 = number;
     shownnum = num2.toString();
+    functionSelected = 3;
   }
 
   void pushDivide() {
