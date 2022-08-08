@@ -73,6 +73,8 @@ class Calculations {
   }
 
   void pushAdd() {
+    print(num1);
+    print(num2);
     pushCalculate(functionSelected);
     previousnum = num1.toString();
     num2 = number;
