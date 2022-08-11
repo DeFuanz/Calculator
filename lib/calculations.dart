@@ -1,7 +1,7 @@
 class Calculations {
   List<int> numbersPressed = [];
 
-  var number;
+
   String shownnum = "0";
   String previousnum = "0";
   double num1 = 0;
@@ -11,7 +11,6 @@ class Calculations {
 
   void pushAC() {
     numbersPressed.clear();
-    number = 0;
     shownnum = "0";
     num1 = 0;
     num2 = 0;
@@ -26,14 +25,14 @@ class Calculations {
   }
 
   void pushDelete() {
-    if (numbersPressed.isNotEmpty && number != 0) {
+    if (numbersPressed.isNotEmpty && num1 != 0) {
       numbersPressed.removeLast();
-      number = int.parse(numbersPressed.join());
-      shownnum = number.toString();
+      num1 = double.parse(numbersPressed.join());
+      shownnum = num1.toString();
     } else {
       numbersPressed.add(0);
-      number = int.parse(numbersPressed.join());
-      shownnum = number.toString();
+      num1 = double.parse(numbersPressed.join());
+      shownnum = num1.toString();
     }
   }
 
@@ -41,7 +40,7 @@ class Calculations {
     if (functionSelected == 0 || functionSelected == 1) {
       num1 = num1 * num2;
     } else {
-      pushCalculate(functionSelected);
+      calculatePrevious(functionSelected);
     }
     num2 = 0;
     previousnum = num1.toString();
@@ -54,7 +53,7 @@ class Calculations {
     if (functionSelected == 0 || functionSelected == 2) {
       num1 = num1 - num2;
     } else {
-      pushCalculate(functionSelected);
+      calculatePrevious(functionSelected);
     }
     num2 = 0;
     previousnum = num1.toString();
@@ -67,7 +66,7 @@ class Calculations {
     if (functionSelected == 0 || functionSelected == 3) {
       num1 = num1 + num2;
     } else {
-      pushCalculate(functionSelected);
+      calculatePrevious(functionSelected);
     }
     num2 = 0;
     previousnum = num1.toString();
@@ -80,7 +79,7 @@ class Calculations {
     if (functionSelected == 0 || functionSelected == 4) {
       num1 = num1 / num2;
     } else {
-      pushCalculate(functionSelected);
+      calculatePrevious(functionSelected);
     }
     num2 = 0;
     previousnum = num1.toString();
@@ -89,7 +88,7 @@ class Calculations {
     functionSelected = 4;
   }
 
-  void pushCalculate(functionSelected) {
+  void calculatePrevious(functionSelected) {
     switch (functionSelected) {
       case 1:
         {
@@ -114,11 +113,6 @@ class Calculations {
           num1 = num1 / num2;
         }
         break;
-
-      default:
-        {
-          shownnum = number.toString();
-        }
     }
   }
 }
