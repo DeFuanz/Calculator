@@ -74,6 +74,7 @@ class Calculations {
 
   void pushAdd() {
     num1 = num2;
+    num2 = 0;
     numbersPressed.clear();
     previousnum = num1.toString();
   }
