@@ -38,20 +38,15 @@ class Calculations {
   }
 
   void pushMultiply() {
-    // found you have to calculate first if you want to use multiple operators
-    if (num1 == 0) {
-      num1 = number;
-    } else {
-      num2 = number;
+    if (functionSelected == 0 || functionSelected == 1) {
       num1 = num1 * num2;
-      num2 = 0;
+    } else {
+      pushCalculate(functionSelected);
     }
-    num2 = number;
+    num2 = 0;
     previousnum = num1.toString();
-    number = 0;
-    shownnum = number.toString();
+    shownnum = num2.toString();
     numbersPressed.clear();
-    numbersPressed.add(0);
     functionSelected = 1;
   }
 
@@ -82,19 +77,15 @@ class Calculations {
   }
 
   void pushDivide() {
-    if (num1 == 0) {
-      num1 = number;
-    } else {
-      num2 = number;
+    if (functionSelected == 0 || functionSelected == 4) {
       num1 = num1 / num2;
-      num2 = 0;
+    } else {
+      pushCalculate(functionSelected);
     }
-    num2 = number;
+    num2 = 0;
     previousnum = num1.toString();
-    number = 0;
-    shownnum = number.toString();
+    shownnum = num2.toString();
     numbersPressed.clear();
-    numbersPressed.add(0);
     functionSelected = 4;
   }
 
