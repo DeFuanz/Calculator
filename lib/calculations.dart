@@ -23,7 +23,6 @@ class Calculations {
     numbersPressed.add(num);
     number = int.parse(numbersPressed.join());
     shownnum = number.toString();
-    num2 = number;
   }
 
   void pushDelete() {
@@ -74,12 +73,7 @@ class Calculations {
   }
 
   void pushAdd() {
-    print(num1);
-    print(num2);
-    pushCalculate(functionSelected);
-    previousnum = num1.toString();
-    shownnum = num2.toString();
-    functionSelected = 3;
+    
   }
 
   void pushDivide() {
@@ -116,7 +110,6 @@ class Calculations {
       case 3:
         {
           num1 = num1 + num2;
-          num2 = 0;
         }
         break;
 
