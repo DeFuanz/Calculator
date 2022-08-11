@@ -120,24 +120,40 @@ class Calculations {
       case 1:
         {
           num1 = num1 * num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
         }
         break;
 
       case 2:
         {
           num1 = num1 - num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
         }
         break;
 
       case 3:
         {
           num1 = num1 + num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
         }
         break;
 
       case 4:
         {
           num1 = num1 / num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
         }
         break;
     }
