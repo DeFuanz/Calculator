@@ -73,7 +73,6 @@ class Calculations {
   }
 
   void pushAdd() {
-    num1 = num2;
     num2 = double.parse(shownnum);
     if (functionSelected == 0) {
       pushCalculate(3);
@@ -81,7 +80,9 @@ class Calculations {
       pushCalculate(functionSelected);
     }
     num1 = double.parse(previousnum);
-    shownnum = "0";
+    num1 = num2;
+    num2 = 0;
+    shownnum = num2.toString();
     numbersPressed.clear();
   }
 
