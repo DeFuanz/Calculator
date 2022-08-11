@@ -1,7 +1,6 @@
 class Calculations {
   List<int> numbersPressed = [];
 
-
   String shownnum = "0";
   String previousnum = "0";
   double num1 = 0;
@@ -114,5 +113,32 @@ class Calculations {
         }
         break;
     }
+  }
+
+  void pushCalculate(functionSelected) {
+    switch (functionSelected) {
+      case 1:
+        {
+          num1 = num1 * num2;
+        }
+        break;
+
+      case 2:
+        {
+          num1 = num1 - num2;
+        }
+        break;
+
+      case 3:
+        {
+          num1 = num1 + num2;
+        }
+        break;
+
+      case 4:
+        {
+          num1 = num1 / num2;
+        }
+        break;
   }
 }
