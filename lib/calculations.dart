@@ -21,8 +21,8 @@ class Calculations {
 
   void pushNum(num) {
     numbersPressed.add(num);
-    number = int.parse(numbersPressed.join());
-    shownnum = number.toString();
+    num2 = double.parse(numbersPressed.join());
+    shownnum = num2.toString();
   }
 
   void pushDelete() {
@@ -73,17 +73,7 @@ class Calculations {
   }
 
   void pushAdd() {
-    num2 = double.parse(shownnum);
-    if (functionSelected == 0) {
-      pushCalculate(3);
-    } else {
-      pushCalculate(functionSelected);
-    }
-    num1 = double.parse(previousnum);
-    num1 = num2;
-    num2 = 0;
-    shownnum = num2.toString();
-    numbersPressed.clear();
+    
   }
 
   void pushDivide() {
@@ -119,9 +109,7 @@ class Calculations {
 
       case 3:
         {
-          print(num1);
-          print(num2);
-          previousnum = (num1 + num2).toString();
+          
         }
         break;
 
