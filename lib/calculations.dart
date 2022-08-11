@@ -73,7 +73,9 @@ class Calculations {
   }
 
   void pushAdd() {
-    
+    num1 = num2;
+    numbersPressed.clear();
+    previousnum = num1.toString();
   }
 
   void pushDivide() {
@@ -108,9 +110,7 @@ class Calculations {
         break;
 
       case 3:
-        {
-          
-        }
+        {}
         break;
 
       case 4:
