@@ -73,11 +73,9 @@ class Calculations {
   }
 
   void pushAdd() {
-    
     functionSelected = 3;
     previousnum = shownnum;
     pushCalculate(functionSelected);
-    
   }
 
   void pushDivide() {
@@ -113,7 +111,7 @@ class Calculations {
 
       case 3:
         {
-          previousnum = previousnum + shownnum;
+          previousnum = (int.parse(previousnum) + int.parse(shownnum)).toString();
         }
         break;
 
