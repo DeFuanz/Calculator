@@ -73,6 +73,7 @@ class Calculations {
   }
 
   void pushAdd() {
+    previousnum = shownnum;
     
   }
 
