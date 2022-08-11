@@ -73,7 +73,7 @@ class Calculations {
   }
 
   void pushAdd() {
-    if (functionSelected == 0 || functionSelected == 3){
+    if (functionSelected == 0 || functionSelected == 3) {
       num1 = num1 + num2;
     } else {
       pushCalculate(functionSelected);
@@ -81,6 +81,7 @@ class Calculations {
     num2 = 0;
     previousnum = num1.toString();
     shownnum = num2.toString();
+    numbersPressed.clear();
   }
 
   void pushDivide() {
