@@ -74,7 +74,7 @@ class Calculations {
 
   void pushAdd() {
     previousnum = shownnum;
-    
+    shownnum = 0.toString();
   }
 
   void pushDivide() {
