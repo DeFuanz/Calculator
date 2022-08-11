@@ -37,7 +37,7 @@ class Calculations {
 
   void pushMultiply() {
     if (functionSelected == 0 || functionSelected == 1) {
-      if (num1 == 0){
+      if (num1 == 0) {
         num1 = 1;
       }
       num1 = num1 * num2;
@@ -53,6 +53,10 @@ class Calculations {
 
   void pushSubtract() {
     if (functionSelected == 0 || functionSelected == 2) {
+      if (num1 == 0){
+        num1 = num2;
+        num2 = 0;
+      }
       num1 = num1 - num2;
     } else {
       calculatePrevious(functionSelected);
