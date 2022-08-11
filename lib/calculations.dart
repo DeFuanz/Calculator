@@ -37,6 +37,9 @@ class Calculations {
 
   void pushMultiply() {
     if (functionSelected == 0 || functionSelected == 1) {
+      if (num1 == 0){
+        num1 = 1;
+      }
       num1 = num1 * num2;
     } else {
       calculatePrevious(functionSelected);
