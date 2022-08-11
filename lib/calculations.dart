@@ -115,30 +115,31 @@ class Calculations {
     }
   }
 
-void pushCalculate(functionSelected) {
-  switch (functionSelected) {
-    case 1:
-      {
-        num1 = num1 * num2;
-      }
-      break;
+  void pushCalculate(functionSelected) {
+    switch (functionSelected) {
+      case 1:
+        {
+          num1 = num1 * num2;
+        }
+        break;
 
-    case 2:
-      {
-        num1 = num1 - num2;
-      }
-      break;
+      case 2:
+        {
+          num1 = num1 - num2;
+        }
+        break;
 
-    case 3:
-      {
-        num1 = num1 + num2;
-      }
-      break;
+      case 3:
+        {
+          num1 = num1 + num2;
+        }
+        break;
 
-    case 4:
-      {
-        num1 = num1 / num2;
-      }
-      break;
+      case 4:
+        {
+          num1 = num1 / num2;
+        }
+        break;
+    }
   }
 }
