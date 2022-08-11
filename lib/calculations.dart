@@ -83,9 +83,8 @@ class Calculations {
 
   void pushDivide() {
     if (functionSelected == 0 || functionSelected == 4) {
-      if (num1 == 0){
+      if (num1 == 0) {
         num1 = num2;
-        num2 = 0;
       }
       num1 = num1 / num2;
     } else {
