@@ -4,10 +4,10 @@ class Calculations {
   var number;
   String shownnum = "0";
   String previousnum = "0";
-  double doublenum = 0;
   double num1 = 0;
-  int num2 = 0;
-  double functionSelected = 0;
+  double num2 = 0;
+  int functionSelected = 0;
+  int lastmethod = 0;
 
   void pushAC() {
     numbersPressed.clear();
@@ -73,8 +73,16 @@ class Calculations {
   }
 
   void pushAdd() {
-    functionSelected = 3;
-    pushCalculate(functionSelected);
+    num1 = num2;
+    num2 = double.parse(shownnum);
+    if (functionSelected == 0){
+      pushCalculate(3);
+    } else {
+      pushCalculate(functionSelected);
+    }
+    num1 = double.parse(previousnum);
+    num2 = 0;
+    shownnum = num2.toString();
   }
 
   void pushDivide() {
@@ -110,8 +118,7 @@ class Calculations {
 
       case 3:
         {
-          previousnum =
-              (int.parse(previousnum) + int.parse(shownnum)).toString();
+          previousnum = (num1 + num2).toString();
         }
         break;
 
