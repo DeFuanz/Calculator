@@ -81,8 +81,7 @@ class Calculations {
       pushCalculate(functionSelected);
     }
     num1 = double.parse(previousnum);
-    num2 = 0;
-    shownnum = num2.toString();
+    shownnum = "0";
     numbersPressed.clear();
   }
 
