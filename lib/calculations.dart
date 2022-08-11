@@ -73,10 +73,14 @@ class Calculations {
   }
 
   void pushAdd() {
-    num1 = num2;
+    if (functionSelected == 0 || functionSelected == 3){
+      num1 = num1 + num2;
+    } else {
+      pushCalculate(functionSelected);
+    }
     num2 = 0;
-    numbersPressed.clear();
     previousnum = num1.toString();
+    shownnum = num2.toString();
   }
 
   void pushDivide() {
@@ -100,23 +104,25 @@ class Calculations {
     switch (functionSelected) {
       case 1:
         {
-          shownnum = (num1 * num2).toString();
+          num1 = num1 * num2;
         }
         break;
 
       case 2:
         {
-          shownnum = (num1 - num2).toString();
+          num1 = num1 - num2;
         }
         break;
 
       case 3:
-        {}
+        {
+          num1 = num1 + num2;
+        }
         break;
 
       case 4:
         {
-          shownnum = (num1 / num2).toString();
+          num1 = num1 / num2;
         }
         break;
 
