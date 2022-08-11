@@ -53,7 +53,7 @@ class Calculations {
 
   void pushSubtract() {
     if (functionSelected == 0 || functionSelected == 2) {
-      if (num1 == 0){
+      if (num1 == 0) {
         num1 = num2;
         num2 = 0;
       }
@@ -83,6 +83,10 @@ class Calculations {
 
   void pushDivide() {
     if (functionSelected == 0 || functionSelected == 4) {
+      if (num1 == 0){
+        num1 = num2;
+        num2 = 0;
+      }
       num1 = num1 / num2;
     } else {
       calculatePrevious(functionSelected);
