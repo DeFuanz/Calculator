@@ -82,6 +82,7 @@ class Calculations {
   }
 
   void pushDivide() {
+    //having an issue with divison producing zero.
     if (functionSelected == 0 || functionSelected == 4) {
       if (num1 == 0) {
         num1 = num2;
