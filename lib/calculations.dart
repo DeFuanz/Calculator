@@ -119,6 +119,8 @@ class Calculations {
 
       case 3:
         {
+          print(num1);
+          print(num2);
           previousnum = (num1 + num2).toString();
         }
         break;
