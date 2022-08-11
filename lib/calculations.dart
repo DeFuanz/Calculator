@@ -73,11 +73,11 @@ class Calculations {
   }
 
   void pushAdd() {
-    pushCalculate(functionSelected);
+    
     functionSelected = 3;
     previousnum = shownnum;
-    shownnum = 0.toString();
-    numbersPressed.clear();
+    pushCalculate(functionSelected);
+    
   }
 
   void pushDivide() {
