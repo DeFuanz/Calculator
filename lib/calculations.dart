@@ -1,112 +1,172 @@
 class Calculations {
   List<int> numbersPressed = [];
-  List<int> numbersQueued = [];
 
-  var number;
-  String combinednum = "0";
-  double doublenum = 0;
-  int num1 = 0;
-  int num2 = 0;
+  String shownnum = "0";
+  String previousnum = "0";
+  double num1 = 0;
+  double num2 = 0;
   int functionSelected = 0;
+  int lastmethod = 0;
 
   void pushAC() {
     numbersPressed.clear();
-    number = 0;
-    combinednum = "0";
+    shownnum = "0";
     num1 = 0;
     num2 = 0;
+    previousnum = "0";
+    functionSelected = 0;
   }
 
   void pushNum(num) {
     numbersPressed.add(num);
-    number = int.parse(numbersPressed.join());
-    combinednum = number.toString();
+    num2 = double.parse(numbersPressed.join());
+    shownnum = num2.toString();
   }
 
   void pushDelete() {
-    if (numbersPressed.isNotEmpty && number != 0) {
+    if (numbersPressed.isNotEmpty && num1 != 0) {
       numbersPressed.removeLast();
-      number = int.parse(numbersPressed.join());
-      combinednum = number.toString();
+      num1 = double.parse(numbersPressed.join());
+      shownnum = num1.toString();
     } else {
       numbersPressed.add(0);
-      number = int.parse(numbersPressed.join());
-      combinednum = number.toString();
+      num1 = double.parse(numbersPressed.join());
+      shownnum = num1.toString();
     }
   }
 
   void pushMultiply() {
-    num1 = number;
-    number = 0;
-    combinednum = number.toString();
+    if (functionSelected == 0 || functionSelected == 1) {
+      if (num1 == 0) {
+        num1 = 1;
+      }
+      num1 = num1 * num2;
+    } else {
+      calculatePrevious(functionSelected);
+    }
+    num2 = 0;
+    previousnum = num1.toString();
+    shownnum = num2.toString();
     numbersPressed.clear();
-    numbersPressed.add(0);
     functionSelected = 1;
   }
 
   void pushSubtract() {
-    num1 = number;
-    number = 0;
-    combinednum = number.toString();
+    if (functionSelected == 0 || functionSelected == 2) {
+      if (num1 == 0) {
+        num1 = num2;
+        num2 = 0;
+      }
+      num1 = num1 - num2;
+    } else {
+      calculatePrevious(functionSelected);
+    }
+    num2 = 0;
+    previousnum = num1.toString();
+    shownnum = num2.toString();
     numbersPressed.clear();
-    numbersPressed.add(0);
     functionSelected = 2;
   }
 
   void pushAdd() {
-    num1 = number;
-    number = 0;
-    combinednum = number.toString();
+    if (functionSelected == 0 || functionSelected == 3) {
+      num1 = num1 + num2;
+    } else {
+      calculatePrevious(functionSelected);
+    }
+    num2 = 0;
+    previousnum = num1.toString();
+    shownnum = num2.toString();
     numbersPressed.clear();
-    numbersPressed.add(0);
     functionSelected = 3;
   }
 
   void pushDivide() {
-    num1 = number;
-    number = 0;
-    combinednum = number.toString();
+    //having an issue with divison producing zero.
+    if (functionSelected == 0 || functionSelected == 4) {
+      if (num1 == 0) {
+        num1 = num2;
+      }
+      num1 = num1 / num2;
+    } else {
+      calculatePrevious(functionSelected);
+    }
+    num2 = 0;
+    previousnum = num1.toString();
+    shownnum = num2.toString();
     numbersPressed.clear();
-    numbersPressed.add(0);
     functionSelected = 4;
   }
 
-  void pushCalculate() {
-    num2 = number;
-
+  void calculatePrevious(functionSelected) {
     switch (functionSelected) {
       case 1:
         {
-          combinednum = (num1 * num2).toString();
+          num1 = num1 * num2;
         }
         break;
 
       case 2:
         {
-          combinednum = (num1 - num2).toString();
+          num1 = num1 - num2;
         }
         break;
 
       case 3:
         {
-          combinednum = (num1 + num2).toString();
+          num1 = num1 + num2;
         }
         break;
 
       case 4:
         {
-          combinednum = (num1 / num2).toString();
+          num1 = num1 / num2;
+        }
+        break;
+    }
+  }
+
+  void pushCalculate(functionSelected) {
+    switch (functionSelected) {
+      case 1:
+        {
+          num1 = num1 * num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
         }
         break;
 
-      default:
+      case 2:
         {
-          combinednum = number.toString();
+          num1 = num1 - num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
         }
-    }
+        break;
 
-    numbersPressed.clear();
-    num1 = 0;
-    num2 = 0;
+      case 3:
+        {
+          num1 = num1 + num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
+        }
+        break;
+
+      case 4:
+        {
+          num1 = num1 / num2;
+          shownnum = num1.toString();
+          num2 = 0;
+          previousnum = num2.toString();
+          numbersPressed.clear();
+        }
+        break;
+    }
   }
 }
